@@ -95,17 +95,26 @@ You'll need these three lemmas - they shouldn't require more than a few lines ea
 
 @[autograded 0.25]
 lemma ftf8 : from_three_five 8 := by
-  sorry
-  done
+   dsimp from_three_five
+   existsi 1
+   existsi 1
+   numbers
+   done
 
 @[autograded 0.25]
 lemma ftf9 : from_three_five 9 := by
-  sorry
+  dsimp from_three_five
+  existsi 3
+  existsi 0
+  numbers
   done
 
 @[autograded 0.25]
 lemma ftf10 : from_three_five 10 := by
-  sorry
+  dsimp from_three_five
+  existsi 0
+  existsi 2
+  numbers
   done
 
 /-
